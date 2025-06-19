@@ -169,3 +169,14 @@ function clickCheck(){
     });
 }
 
+function DownloadResume(){
+  document.getElementById("downloadBtn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "/files/Psalm Nathaniel S. Bartolome - Resume.pdf";
+    link.download = "Psalm Nathaniel S. Bartolome - Resume.pdf"; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
+
